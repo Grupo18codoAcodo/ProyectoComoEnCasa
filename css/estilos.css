@@ -1,9 +1,11 @@
 /* Resets */
 header {
+  font-family: Arial, Helvetica, sans-serif;
 	background-color: #d0e4c0;
 	color: #fff;
 	padding: 10px;
 	text-align: center;
+  text-decoration: none;
 }
 
 main {
@@ -33,13 +35,23 @@ img {
 
 h2 {
 	margin-top: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+  color: white;
+}
+form{
+  color: rgb(225, 225, 235);
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
 }
 
 footer {
 	background-color: #d0e4c0;
-	color: #fff;
+	color: #dd1212;
 	padding: 10px;
 	text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -66,4 +78,5 @@ footer {
       margin: 10px 0;
     }
   }
+  
   
