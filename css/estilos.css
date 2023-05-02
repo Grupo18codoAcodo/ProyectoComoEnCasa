@@ -1,4 +1,17 @@
 /* Resets */
+*{
+  background-color: rgba(160,197,95,50%);
+  margin:0
+}
+
+h1{
+  color: #0B2E59;
+}
+
+.p1{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: italic;
+}
 header {
   font-family: Arial, Helvetica, sans-serif;
 	background-color: #d0e4c0;
