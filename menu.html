@@ -15,6 +15,7 @@
 
 
 <body>
+	
     <header>
 		<h1>Menú</h1>
 	</header>
@@ -22,8 +23,14 @@
 	<main>
 		<div class="plato">
 			<h2>Brochetas</h2>
-			<img src="img/brochetasDePolloYcarne.jpeg" alt="Brochetas">
 			<p>Brochetas de Pollo y carne con pure.</p>
+			<img src="img/brochetasDePolloYcarne.jpeg" alt="Brochetas">
+			<!--Botones para contar o restar productos-->
+			<input type="button" id="BtnRes1" value="<"> 			
+			<p2 id="MsgCuentaResta" value="">0</p2>
+			<input type="button" id="BtnSum1" value=">">
+			<input type="button" id="AgreCom" Value="Agregar al carrito">
+			
 		</div>
 		
 		<div class="plato">
@@ -70,6 +77,7 @@
 
 
 	</main>
+	<script src="js/script.js"></script>
 </body>
 
 <footer id="contacto">
