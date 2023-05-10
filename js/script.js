@@ -1,5 +1,11 @@
 document.querySelector("#BtnRes1").addEventListener("click",ResUno);
 document.querySelector("#BtnSum1").addEventListener("click",SumUno);
+
+
+
+
+
+
 let CuentaResta=0;
 
 function SumUno() {
