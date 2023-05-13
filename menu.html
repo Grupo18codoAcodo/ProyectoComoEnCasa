@@ -1,140 +1,134 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menú</title>
-
-    <link rel="icon" href="img/logo.ico">
-
-    <link rel="stylesheet" href="css/estilos.css">
-    
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Como en Casa - Menú</title>
+	<link href="./css/estilos.css" rel="stylesheet" type="text/css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ewert&family=Roboto&display=swap" rel="stylesheet">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/IconoFavicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/IconoFavicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/IconoFavicon/favicon-16x16.png">
+	<link rel="manifest" href="img/site.webmanifest">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="js/script.js"></script>
 </head>
 
-
-
 <body>
-	
-    <header>
-		<h1>Menú</h1>
+    <!--────────────────encabezado───────────────-->
+	<header>
+		<a class="logo" href="./index.html">
+              <img src="./img/comoEnCasa.png" alt="fernet logo" />
+		</a>
+		<nav>	
+		 <ul class="nav-bar">
+			<li><a class="nav-link" href="index.html">Inicio</a></li>
+			<li><a class="nav-link" href="menu.html">Menú</a></li>
+			<li><a class="nav-link" href="sucuarsales.html">Sucursales</a></li>
+			<li><a class="nav-link" href="pedidos.html">Reservas</a></li>
+			<li><a class="nav-link" href="contacto.html">Contacto</a></li>
+		 </ul>
+		</nav>
 	</header>
 	
 	<main>
+	<section id="menu">
 		<div class="plato">
 			<h2>Brochetas</h2>
 			<p>Brochetas de Pollo y carne con pure.</p>
-			<img src="img/brochetasDePolloYcarne.jpeg" alt="Brochetas">
-			<!--Botones para contar o restar productos-->
-			<input type="button" id="BtnRes1" value="<"> 			
-			<p2 id="MsgCuentaResta" value="">0</p2>
-			<input type="button" id="BtnSum1" value=">">
-			<input type="button" id="AgreCom" Value="Agregar al carrito">
-			
+			<div class="producto-contador">
+				<button class="button-contador no-active" disabled>-</button>
+				<input type="text" readonly class="producto-numero" value="1">
+				<button class="button-contador">+</button>
+			</div>
+			<img src="img/brochetasDePolloYcarne.jpeg" alt="Cachapa">
 		</div>
 		
 		<div class="plato">
 			<h2>Cachapa</h2>
-			<img src="img/CachapaConQuesoCochinoFrito.jpeg" alt="Cachapa">
 			<p>Cachapa con queso y cochino frito.</p>
+			<div class="producto-contador">
+				<button class="button-contador no-active" disabled>-</button>
+				<input type="text" readonly class="producto-numero" value="1">
+				<button class="button-contador">+</button>
+			</div>
+			<img src="img/CachapaConQuesoCochinoFrito.jpeg" alt="Cachapa">
 		</div>
 		
 		<div class="plato">
 			<h2>Empanadas</h2>
-			<img src="img/empanadas.jpeg" alt="Empanadas">
 			<p>Empanadas de Carne.</p>
+			<div class="producto-contador">
+				<button class="button-contador no-active" disabled>-</button>
+				<input type="text" readonly class="producto-numero" value="1">
+				<button class="button-contador">+</button>
+			</div>
+			<img src="img/empanadas.jpeg" alt="Empanadas">
 		</div>
 
         <div class="plato">
 			<h2>Pastel de Platano</h2>
-			<img src="img/pastelDePlatanoConBoloniesa.jpeg" alt="Pastel de Platano">
 			<p>Pastel de platano con salsa boloñesa.</p>
+			<div class="producto-contador">
+				<button class="button-contador no-active" disabled>-</button>
+				<input type="text" readonly class="producto-numero" value="1">
+				<button class="button-contador">+</button>
+			</div>
+			<img src="img/pastelDePlatanoConBoloniesa.jpeg" alt="Pastel de Platano">
 		</div>
 
         <div class="plato">
 			<h2>Pasticho de carne</h2>
-			<img src="img/PastichoDecarne.jpeg" alt="Pasticho de carne">
 			<p>Pasticho de carne.</p>
+			<div class="producto-contador">
+				<button class="button-contador no-active" disabled>-</button>
+				<input type="text" readonly class="producto-numero" value="1">
+				<button class="button-contador">+</button>
+			</div>
+			<img src="img/PastichoDecarne.jpeg" alt="Pasticho de carne">
 		</div>
 
         <div class="plato">
 			<h2>Patacon Maduro</h2>
-			<img src="img/PataconMaduroConPollo.jpeg" alt="Patacon Maduro">
 			<p>Patacon maduro con pollo gratinado.</p>
+			<div class="producto-contador">
+				<button class="button-contador no-active" disabled>-</button>
+				<input type="text" readonly class="producto-numero" value="1">
+				<button class="button-contador">+</button>
+			</div>
+			<img src="img/PataconMaduroConPollo.jpeg" alt="Patacon Maduro">
 		</div>
 
         <div class="plato">
 			<h2>Patacon Verde</h2>
-			<img src="img/pataconVerde.jpeg" alt="Patacon Verde">
 			<p>Patacon verde.</p>
+			<div class="producto-contador">
+				<button class="button-contador no-active" disabled>-</button>
+				<input type="text" readonly class="producto-numero" value="1">
+				<button class="button-contador">+</button>
+			</div>
+			<img src="img/pataconVerde.jpeg" alt="Patacon Verde">
 		</div>
 
         <div class="plato">
 			<h2>Sopa de Res</h2>
-			<img src="img/sopaDeRes.jpeg" alt="Sopa de Ress">
 			<p>Sopa de Res.</p>
+			<div class="producto-contador">
+				<button class="button-contador no-active" disabled>-</button>
+				<input type="text" readonly class="producto-numero" value="1">
+				<button class="button-contador">+</button>
+			</div>
+			<img src="img/sopaDeRes.jpeg" alt="Sopa de Ress">
 		</div>
 
-		<!-- + platos -->
-		<div class="plato">
-			<h2>Arepas Fritas</h2>
-			<img src="img/ArepasFritasConPolloCarneMechadaQuesFrito.jpeg" alt="Arepas Fritas">
-			<p>Arepas fritas con pollo carne mechada y queso frito</p>
-		</div>
-		
-		<div class="plato">
-			<h2>Burritos</h2>
-			<img src="img/burritos.jpeg" alt="Burritos">
-			<p>Arepas fritas con pollo carne mechada y queso frito</p>
-		</div>
-		
-		<div class="plato">
-			<h2>Chuleta Ahumada con Arroz</h2>
-			<img src="img/ChuletaAhumadaArrozEnsalada.jpeg" alt="Chuleta Ahumada con Arroz">
-			<p>Chuleta Ahumada con Arroz y ensalada</p>
-		</div>
-
-		<div class="plato">
-			<h2>Chuleta Ahumada con Papas</h2>
-			<img src="img/ChuletaAhumadaPapasEnsaladaTajadas.jpeg" alt="Chuleta Ahumada con Papas">
-			<p>Chuleta Ahumada con Papas y ensalada y tajadas</p>
-		</div>
-
-		<div class="plato">
-			<h2>Lasagna</h2>
-			<img src="img/Lasagna.jpeg" alt="Lasagna">
-			<p>Lasaña</p>
-		</div>
-		<div class="plato">
-			<h2>Rekolita con Minitekenios</h2>
-			<img src="img/ReKolitaConTequenios.jpeg" alt="Rekolita con Minitekenios">
-			<p>Rekolita con mini tequeños</p>
-		</div>
-
+	</section>
 	</main>
-	<script src="js/script.js"></script>
 </body>
 
-<footer id="contacto">
-    <nav>
-      <a href="index.html">
-          <img src="img/logo.ico" alt="Logo Empresa" width="50" height="50">
-
-      </a>
-      <a href="https://api.whatsapp.com/send?phone=1127098137" target="_blank">
-          <img src="./img/whatsapp.png" alt="Contacto" width="30" height="30">
-      </a>
-      <!-- <a href="https://www.facebook.com/cafeteria.brig" target="_blank">
-          <img src="./img/facebook.png" alt="Facebook"  width="30" height="30">
-      </a> -->
-      <a href="https://www.instagram.com/comoencasa_ar/" target="_blank">
-          <img src="./img/instagram.png" alt="instagram" width="30" height="30">
-      </a>
-      <a href=""></a>
-      <a href=""></a>
-    </nav>
-    <br>
-    <p>Sitio desarrollado por Grupo 18</p>
+<footer class="copyright">  
+	<p>Desarrollado por Grupo 18 | 2023</p>
 </footer>
 
 </html>
