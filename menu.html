@@ -13,122 +13,82 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="img/IconoFavicon/favicon-16x16.png">
 	<link rel="manifest" href="img/site.webmanifest">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="js/script.js"></script>
 </head>
 
 <body>
-    <!--────────────────encabezado───────────────-->
-	<header>
-		<a class="logo" href="./index.html">
-              <img src="./img/comoEnCasa.png" alt="fernet logo" />
-		</a>
-		<nav>	
-		 <ul class="nav-bar">
-			<li><a class="nav-link" href="index.html">Inicio</a></li>
-			<li><a class="nav-link" href="menu.html">Menú</a></li>
-			<li><a class="nav-link" href="sucuarsales.html">Sucursales</a></li>
-			<li><a class="nav-link" href="pedidos.html">Reservas</a></li>
-			<li><a class="nav-link" href="contacto.html">Contacto</a></li>
-		 </ul>
-		</nav>
-	</header>
-	
+    <!--──────────Encabezado en js miHeader───────────────-->
+	<header></header>
+	<!------------------------------------------------------->
 	<main>
 	<section id="menu">
 		<div class="plato">
 			<h2>Brochetas</h2>
 			<p>Brochetas de Pollo y carne con pure.</p>
-			<div class="producto-contador">
-				<button class="button-contador no-active" disabled>-</button>
-				<input type="text" readonly class="producto-numero" value="1">
-				<button class="button-contador">+</button>
-			</div>
+			<BotonPedir></BotonPedir>
 			<img src="img/brochetasDePolloYcarne.jpeg" alt="Cachapa">
 		</div>
 		
 		<div class="plato">
 			<h2>Cachapa</h2>
 			<p>Cachapa con queso y cochino frito.</p>
-			<div class="producto-contador">
-				<button class="button-contador no-active" disabled>-</button>
-				<input type="text" readonly class="producto-numero" value="1">
-				<button class="button-contador">+</button>
-			</div>
+			<BotonPedir></BotonPedir>
 			<img src="img/CachapaConQuesoCochinoFrito.jpeg" alt="Cachapa">
 		</div>
 		
 		<div class="plato">
 			<h2>Empanadas</h2>
 			<p>Empanadas de Carne.</p>
-			<div class="producto-contador">
-				<button class="button-contador no-active" disabled>-</button>
-				<input type="text" readonly class="producto-numero" value="1">
-				<button class="button-contador">+</button>
-			</div>
+			<BotonPedir></BotonPedir>
 			<img src="img/empanadas.jpeg" alt="Empanadas">
 		</div>
 
         <div class="plato">
 			<h2>Pastel de Platano</h2>
 			<p>Pastel de platano con salsa boloñesa.</p>
-			<div class="producto-contador">
-				<button class="button-contador no-active" disabled>-</button>
-				<input type="text" readonly class="producto-numero" value="1">
-				<button class="button-contador">+</button>
-			</div>
+			<BotonPedir></BotonPedir>
 			<img src="img/pastelDePlatanoConBoloniesa.jpeg" alt="Pastel de Platano">
 		</div>
 
         <div class="plato">
 			<h2>Pasticho de carne</h2>
 			<p>Pasticho de carne.</p>
-			<div class="producto-contador">
-				<button class="button-contador no-active" disabled>-</button>
-				<input type="text" readonly class="producto-numero" value="1">
-				<button class="button-contador">+</button>
-			</div>
+			<BotonPedir></BotonPedir>
 			<img src="img/PastichoDecarne.jpeg" alt="Pasticho de carne">
 		</div>
 
         <div class="plato">
 			<h2>Patacon Maduro</h2>
 			<p>Patacon maduro con pollo gratinado.</p>
-			<div class="producto-contador">
-				<button class="button-contador no-active" disabled>-</button>
-				<input type="text" readonly class="producto-numero" value="1">
-				<button class="button-contador">+</button>
-			</div>
+			<BotonPedir></BotonPedir>
 			<img src="img/PataconMaduroConPollo.jpeg" alt="Patacon Maduro">
 		</div>
 
         <div class="plato">
 			<h2>Patacon Verde</h2>
 			<p>Patacon verde.</p>
-			<div class="producto-contador">
-				<button class="button-contador no-active" disabled>-</button>
-				<input type="text" readonly class="producto-numero" value="1">
-				<button class="button-contador">+</button>
-			</div>
+			<BotonPedir></BotonPedir>
 			<img src="img/pataconVerde.jpeg" alt="Patacon Verde">
 		</div>
 
         <div class="plato">
 			<h2>Sopa de Res</h2>
 			<p>Sopa de Res.</p>
+			
 			<div class="producto-contador">
-				<button class="button-contador no-active" disabled>-</button>
-				<input type="text" readonly class="producto-numero" value="1">
+				<button class="button-contador no-active">-</button>
+				<input type="text" readonly class="producto-numero" value="0">
 				<button class="button-contador">+</button>
 			</div>
+
 			<img src="img/sopaDeRes.jpeg" alt="Sopa de Ress">
 		</div>
 
 	</section>
 	</main>
+	<footer class="copyright">
+    </footer>
+	
+	<script src="js/HederYfooter.js"></script>
+	<script src="js/script.js"></script>
 </body>
-
-<footer class="copyright">  
-	<p>Desarrollado por Grupo 18 | 2023</p>
-</footer>
-
 </html>
