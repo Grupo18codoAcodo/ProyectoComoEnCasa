@@ -1,4 +1,4 @@
-//+++++++++++++++++Me creo el boton de comprar++++++++++++++++++
+
 let botonParaPedir=`
 <div class="producto-contador">
 <button class="button-contador no-active">-</button>
@@ -8,23 +8,24 @@ let botonParaPedir=`
 document.querySelector("BotonPedir").innerHTML=botonParaPedir;
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-
-
-
 document.addEventListener('DOMContentLoaded', function() {
-    // Obtener el elemento del contador
-    var contador = document.querySelector('.producto-contador');
+  // Obtener todos los elementos del contador
+  var contadores = document.querySelectorAll('.producto-contador');
+  
+  // Establecer el límite del contador
+  var limite = 10;
+  
+  // Iterar sobre todos los contadores y agregar los oyentes de eventos
+  contadores.forEach(function(contador) {
     // Obtener los botones de incremento y decremento
     var botonMas = contador.querySelector('.button-contador:not(.no-active)');
     var botonMenos = contador.querySelector('.button-contador.no-active');
-  
+
     // Obtener el input de número
     var inputNumero = contador.querySelector('.producto-numero');
-    
-    // Establecer el límite del contador
-    var limite = 10;    
+
     var valor = 0;
-  
+
     // Función para incrementar el valor del contador
     botonMas.addEventListener('click', function() {
       if (valor < limite) {
@@ -32,13 +33,13 @@ document.addEventListener('DOMContentLoaded', function() {
         inputNumero.value = valor;
       }
     });
-  
+
     // Función para decrementar el valor del contador
     botonMenos.addEventListener('click', function() {
       if (valor > 0) {
         valor--;
-        inputNumero.value = valor;        
+        inputNumero.value = valor;
       }
     });
   });
-  
+});
