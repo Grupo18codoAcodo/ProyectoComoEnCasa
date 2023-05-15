@@ -1,11 +1,11 @@
 
-let botonParaPedir=`
-<div class="producto-contador">
-<button class="button-contador no-active">-</button>
-<input type="text" readonly class="producto-numero" value="0">
-<button class="button-contador">+</button>
-</div>`
-document.querySelector("BotonPedir").innerHTML=botonParaPedir;
+ let botonParaPedir=`
+ <div class="producto-contador">
+ <button class="button-contador no-active">-</button>
+ <input type="text" readonly class="producto-numero" value="0">
+ <button class="button-contador">+</button>
+ </div>`
+ document.querySelector("BotonPedir").innerHTML=botonParaPedir;
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -39,7 +39,8 @@ document.addEventListener('DOMContentLoaded', function() {
       if (valor > 0) {
         valor--;
         inputNumero.value = valor;
-      }
-    });
+      };
+    })   
+    
   });
 });

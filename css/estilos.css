@@ -262,6 +262,21 @@
     text-align: center;
     border: none;
     outline: none;
+    cursor: pointer;
+  }
+  #AgrePed {
+    display: inline-block;
+    font-family: 'Time', cursive;
+    width: 150px;
+    height: 30px;
+    background-color: var(--principal-decor-color);
+    color: white;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
   }
   .button-contador:active {
     background-color: rgb(55, 65, 35);
