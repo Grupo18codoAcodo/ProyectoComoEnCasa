@@ -13,6 +13,7 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="img/IconoFavicon/favicon-16x16.png">
 	<link rel="manifest" href="img/site.webmanifest">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="">js/validaciones.js</script>
 </head>
 
   <body>
@@ -25,17 +26,23 @@
     
     <div class="elemento"> 
         <h3 id="h3-formulario">Complete el Formulario</h3> <hr>
-        <form action="show_data.html" target="_blank">
-        <label for="firsname">Nombre:</label> <input type="text" name="firstname" placeholder="Ingrese su nombre..."><br><br>
-        <label for="lastname">Apellido:</label> <input type="text" name="lastname" placeholder="Ingrese su apellido"><br><br>
-        <label for="street">Direccion:</label> <input type="text" name="address" placeholder="Ingrese su dirección..."><br><br>
-        <label for="city">Ciudad:</label> <input type="text" name="city" placeholder="Ingrese su ciudad" value="CABA"><br><br>
-        <label for="zipcode">Codigo Postal:</label> <input type="text" name="zipcode" placeholder="Ingrese su codigo postal..."><br><br>
-        <label for="birthdate">Nacimiento:</label> <input type="date" name="birthdate" placeholder=""><br><br>
-        <label for="email"> Mail:</label> <input type="email" name="email" placeholder="minombre@gmail.com..."><br><br>
-        <input type="submit" value="Enviar" id="submit">
+        <!-- <form action="show_data.html" target="_blank"> -->
+        <form action="" name="formulario" method="get">
+          <label for="firsname">Nombre:</label> <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre..."><br><br>
+          <label for="lastname">Apellido:</label> <input type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido"><br><br>
+          <label for="street">Direccion:</label> <input type="text" name="direccion"  placeholder="Ingrese su dirección..."><br><br>
+          <label for="city">Ciudad:</label> <input type="text" name="ciudad"  placeholder="Ingrese su ciudad" value="CABA"><br><br>
+          <label for="zipcode">Codigo Postal:</label> <input type="text" name="zipcode" placeholder="Ingrese su codigo postal..."><br><br>
+          <label for="birthdate">Nacimiento:</label> <input type="date" name="nacimiento"  placeholder=""><br><br>
+          <label for="email"> Mail:</label> <input type="email" name="email"  placeholder="minombre@gmail.com..."><br><br>
+          <input type="submit" value="Enviar" id="submit">
         </form>
     </div>
+
+      <script src="js/validaciones.js"></script>
+
+
+
 
 
 <!--──────────────contacto y footer────────────────-->
@@ -55,7 +62,10 @@
 <footer class="copyright">  
 </footer>
 	
-<script src="js/HederYfooter.js"></script>
-<script src="js/script.js"></script>
+
+
+
+
+
 </body>
 </html>
