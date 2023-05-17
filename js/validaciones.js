@@ -16,7 +16,7 @@
 
   var validarApellido = function (e) {
     if (formulario.apellido.value == 0) { // Si el campo id="nombre" del form está vacio...
-        alert("Completa el campo apelldio") 
+        alert("Completa el campo apellido") 
         e.preventDefault() // Evita el comportamiento por defecto
     }
 }
