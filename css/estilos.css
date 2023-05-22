@@ -262,8 +262,11 @@
     text-align: center;
     border: none;
     outline: none;
-    cursor: pointer;
   }
+  .button-contador:active {
+    background-color: rgb(55, 65, 35);
+  }
+  
   #AgrePed {
     display: inline-block;
     font-family: 'Time', cursive;
@@ -278,9 +281,7 @@
     outline: none;
     cursor: pointer;
   }
-  .button-contador:active {
-    background-color: rgb(55, 65, 35);
-  }
+
   
   .producto-numero {
     display: inline-block;
@@ -299,28 +300,79 @@
                             pie de página
 ────────────────────────────────────────────────────────────────────────────────*/
   
-  footer {
-    width: 100%;
-    height: 100%;
-    background-color: var(--principal-header-background);
-  }
-  
-  .copyright {
-    color: var(--principal-fonts-color);
-    line-height: 40px;
-    text-align: center;
-  }
-  
-  .copyright a{
-    color: #fff;
-    font-size: 1rem;
-    letter-spacing: 1px;
-    text-decoration: none;
-  }
-  
-  .copyright a:hover{
-    color: var(--principal-decor-color);
-  }
+.container{
+  max-width: 2170px;
+  margin:auto;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+ul{
+  list-style: none;
+}
+.footer{
+  background-color: #a4cc85;
+  padding: 70px 0;
+  line-height: 1.5;
+
+}
+.footer-col{
+   width: 20%;
+   padding: 0 0 0 4rem;
+}
+.footer-col h4{
+  font-size: 18px;
+  color: var(--principal-font-family);
+  text-transform: capitalize;
+  margin: 25px 0;
+  font-weight: 800;
+  position: relative;
+}
+.footer-col h4::before{
+  content: '';
+  position: absolute;
+  left:0;
+  bottom: 0;
+  background-color: var(--principal-background);
+  height: 2px;
+  box-sizing: border-box;
+  width: 75px;
+}
+.footer-col ul li:not(:last-child){
+  margin-bottom: 10px;
+}
+.footer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: var(--principal-font-family);
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--principal-font-family);
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+  color: var(--principal-font-family);
+  padding-left: 8px;
+}
+.footer-col .social-links a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255,255,255,0.2);
+  margin:0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: var(--principal-font-family);
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+  color: var(--principal-font-family);
+  background-color: var(--principal-decor-color);
+}
+
  /*────────────────────────────────────────────────────────────────────────────── 
                                 contacto
   ────────────────────────────────────────────────────────────────────────────────*/
@@ -461,3 +513,17 @@
       margin: 10px 0;
     }
   }
+
+  /*responsive footer*/
+  @media(max-width: 767px){
+    .footer-col{
+      width: 50%;
+      margin-bottom: 30px;
+  }
+  }
+  @media(max-width: 574px){
+    .footer-col{
+      width: 100%;
+  }
+  }
+
