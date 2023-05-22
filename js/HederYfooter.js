@@ -7,7 +7,6 @@ let miheader=`	<a class="logo" href="./index.html">
 <li><a class="nav-link" href="index.html">Inicio</a></li>
 <li><a class="nav-link" href="menu.html">Menú</a></li>
 <li><a class="nav-link" href="sucuarsales.html">Sucursales</a></li>
-<li><a class="nav-link" href="pedidos.html">Pedidos</a></li>
 <li><a class="nav-link" href="contacto.html">Contacto</a></li>
 </ul>
 </nav>`
