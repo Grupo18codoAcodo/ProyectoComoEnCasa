@@ -21,14 +21,6 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   }
 
-    //para el pedido
-  document.getElementById("pedir").addEventListener("click", function() {
-    alert("Pedido enviado");
-    document.getElementById("cancelar").click();
-  });
-// fin del pedido
-
-
     document.getElementById("cancelar").addEventListener("click", function() {
       var listaCarrito = document.getElementById("lista-carrito");
       while (listaCarrito.firstChild) {
@@ -49,6 +41,7 @@ document.addEventListener("DOMContentLoaded", function() {
       
           var listItem = document.createElement("li");
           listItem.textContent = nombre + " - $" + precio + " x " + cantidad;
+          listItem.classList.add("item-carrito");
           listaCarrito.appendChild(listItem);
       
           var total = calcularTotal();
