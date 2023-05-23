@@ -527,3 +527,11 @@ ul{
   }
   }
 
+/*------------ para el pedido--------------------*/
+.item-carrito {
+  
+  color: rgb(80, 100, 50);
+  font-size: 20px;
+  font-weight: bold;
+  
+}
