@@ -68,11 +68,11 @@
   ─────────────────────*/
   .elemento{
     margin-top: 0;
-      height: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-      justify-content: center;
+    justify-content: center;
     text-align:left;
     color: var(--principal-fonts-color);
   }
@@ -269,7 +269,6 @@
   
   #AgrePed {
     display: inline-block;
-    font-family: 'Time', cursive;
     width: 150px;
     height: 30px;
     background-color: var(--principal-decor-color);
@@ -296,6 +295,39 @@
     background-color: #8f8f8f;
   }
   
+  /*───────────────────── 
+        carrito
+  ─────────────────────*/
+  .botones-carrito input{
+    display: inline-block;
+    margin: 1rem 0 2rem 0;
+    width: 100px;
+    height: 30px;
+    background-color: var(--principal-decor-color);
+    color: white;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  #lista-carrito{
+    min-height: 150px;
+    margin-bottom: 2rem;
+  }
+  #lista-carrito li{
+    padding: 1rem 0;
+    border-bottom: 0.5px solid var(--principal-fonts-color);
+  }
+
+  .item-carrito {
+  color: rgb(80, 100, 50);
+  font-size: 20px;
+  font-weight: bold;
+  }
+
 /*────────────────────────────────────────────────────────────────────────────── 
                             pie de página
 ────────────────────────────────────────────────────────────────────────────────*/
@@ -313,7 +345,7 @@ ul{
 }
 .footer{
   background-color: #a4cc85;
-  padding: 70px 0;
+  padding:  1.5rem 0 4rem 0;
   line-height: 1.5;
 
 }
@@ -441,49 +473,9 @@ ul{
     background-color: var(--principal-header-background);
     padding: 8px 0;
   }
-  /* ────────────────────────────────────────────────────────────────────────────── 
+  /*────────────────────────────────────────────────────────────────────────────── 
                                 media queries
   ────────────────────────────────────────────────────────────────────────────────*/
-  
-  /* @media only screen and (max-width: 500px) {
-  
-    #inicio, #elemento, #contacto{
-          overflow-x: hidden;
-    }
-    header{
-      background-color: var(--principal-header-background);
-      align-items: center;
-      justify-content: center;
-    }
-    .logo{
-      top: 2px;
-      left: 30px;
-    }
-    .nav-show{
-      opacity: 1;
-    }	 
-    .nav-bar{
-      position:fixed;
-      top: 0px;
-      right:0;
-      width:60%;
-      height: 100vh;
-      display:flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content:space-between;
-      background:var(--principal-header-background);
-      transform:translatex(100%);
-      transition: transform 0.5s ease-in;
-      z-index: -1;
-    }
-    .nav-bar li{
-      opacity:0;
-    }
-    #elemento2 img{
-      display: none;
-    }
-  } */
   
   .nav-activo{
     transform:translatex(0%);
@@ -526,12 +518,3 @@ ul{
       width: 100%;
   }
   }
-
-/*------------ para el pedido--------------------*/
-.item-carrito {
-  
-  color: rgb(80, 100, 50);
-  font-size: 20px;
-  font-weight: bold;
-  
-}
