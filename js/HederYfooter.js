@@ -29,7 +29,6 @@ let miFooter=`
     <li><a href="index.html">Inicio</a></li>
     <li><a href="menu.html">Menú</a></li>
     <li><a href="sucuarsales.html">Sucursales</a></li>
-    <li><a href="pedidos.html">Pedidos</a></li>
     <li><a href="contacto.html">Contacto</a></li>
     </ul>
   </div>
@@ -47,7 +46,7 @@ let miFooter=`
     <h4>Contactanos</h4>
     <div class="social-links">
       <a href="#"><i class="fab fa-facebook-f"></i></a>
-      <a href="https://api.whatsapp.com/send?phone=1127098137"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://api.whatsapp.com/send?phone=91127098137"><i class="fab fa-whatsapp"></i></a>
       <a href="https://www.instagram.com/comoencasa_ar/"><i class="fab fa-instagram"></i></a>
       <p>Desarrollado por grupo 18</p>
     </div>
