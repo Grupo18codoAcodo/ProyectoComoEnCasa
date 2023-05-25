@@ -504,6 +504,9 @@ ul{
       width: 100%;
       margin: 10px 0;
     }
+    .nav-bar li{
+      font-size: smaller;
+    }
   }
 
   /*responsive footer*/
